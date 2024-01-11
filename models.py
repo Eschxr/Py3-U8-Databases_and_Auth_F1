@@ -26,3 +26,14 @@ class Tasks(Base):
     priority = Column(Integer)
     complete = Column(Boolean, default=False)
     created_on = Column(DateTime, default=datetime.now(timezone.utc))
+
+
+class Students(Base):
+    __tablename__ = "students"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String)
+    gender = Column(String)
+    grad_year = Column(String)
+    gpa = Column(Boolean, default=False)
+    fav_class = Column(String)
