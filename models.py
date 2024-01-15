@@ -35,5 +35,5 @@ class Students(Base):
     name = Column(String)
     gender = Column(String)
     grad_year = Column(String)
-    gpa = Column(Boolean, default=False)
+    gpa = Column(String)
     fav_class = Column(String)
